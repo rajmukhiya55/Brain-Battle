@@ -1,0 +1,80 @@
+.quiz-container {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.6); /* Soft transparent white */
+}
+
+.small-option-input {
+  width: 200px;
+}
+
+.template-heading {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* New solid button style for "Back to Template Selection" */
+.back-to-template-btn {
+  background-color: #333 !important; /* Solid dark background */
+  color: white !important;           /* White text for contrast */
+  border: none !important;           /* Remove border */
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+.back-to-template-btn:hover {
+  background-color: #000 !important; /* Darker on hover */
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  /* Make heading font smaller for mobile */
+  .template-heading {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+  .button-group .btn {
+    width: 100%;
+  }
+}
+
+/* Preview section buttons */
+.preview-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .preview-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .preview-buttons .btn {
+    width: 100%;
+  }
+}
+
